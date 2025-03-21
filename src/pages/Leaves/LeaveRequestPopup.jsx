@@ -105,7 +105,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                 <div className="form-group" style={{ width: "100%", height: "60%" }}>
                   <label className="field-labels"><b>Employee's name</b></label>
                   <textarea
-                    style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "2.4em", width: "100%" }}
+                    style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "2.8em", width: "100%" }}
                     name="employeeName"
                     value={formData.employeeName}
                     onChange={handleChange}
@@ -114,7 +114,7 @@ const LeaveRequestPopup = ({ onClose }) => {
                 </div>
               </div > 
               <div style={{display: "flex"}}> 
-                <div className="form-group" style={{ width: "40%", height: "40%" }}>
+                <div className="form-group" style={{ width: "50%", height: "40%", paddingTop: "20px"}}>
                   <label className="field-labels"><b>Start date</b></label>
                   <input
                     type="date"
@@ -126,9 +126,9 @@ const LeaveRequestPopup = ({ onClose }) => {
                   />
                 </div>
                 <div style={{ width: "20%", textAlign: "center", verticalAlign: "middle" }}>
-                  <p style={{ marginTop: "40px", marginLeft: "6px", fontWeight: "600", fontSize: "19px" }}>to</p>
+                  <p style={{ marginTop: "40px", marginLeft: "6px", fontWeight: "600", fontSize: "19px", paddingTop: "20px" }}>to</p>
                 </div>
-                <div className="form-group" style={{ width: "40%", height: "40%" }}>
+                <div className="form-group" style={{ width: "50%", height: "40%", paddingTop: "20px" }}>
                   <label className="field-labels"><b>End date</b></label>
                   <input
                     type="date"
@@ -141,9 +141,9 @@ const LeaveRequestPopup = ({ onClose }) => {
                 </div>
               </div>
               <div> 
-                <div className="form-group" style={{ marginTop: "20px" }}>
+                <div className="form-group" style={{ marginTop: "20px", paddingTop: "5px" }}>
                   <textarea
-                  style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "3em" }}
+                  style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "3.5em"  }}
                     placeholder="Reason for leave"
                     name="reason"
                     value={formData.reason}
