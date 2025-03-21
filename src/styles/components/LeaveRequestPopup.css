@@ -14,6 +14,8 @@
 .popup-content {
     background: white;
     padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 1200; 
     height: 800px; 
     border-radius: 12px;
@@ -23,14 +25,25 @@
     animation: fadeIn 0.3s ease-in-out;
     margin: 0 auto; 
     
+    
 }
 
 .CircularProgressbar-path {
     stroke-width: 4px;  
 }
 
+h1{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 600;
+
+
+}
+
 .time-off-balance {
     margin-left: 180px;
+    margin-bottom: 55px;
+  
 }
 
 @keyframes fadeIn {
@@ -46,6 +59,7 @@
 
 .form-group {
     margin-bottom: 15px;
+    max-height: auto;
     
 }
 
@@ -62,14 +76,14 @@ textarea {
     border-radius: 6px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     
     
 }
 
 
 .dropdown-label {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -83,11 +97,14 @@ textarea {
     color: white;
     padding: 12px 18px;
     font-size: 16px;
+    font-weight: 500;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 10px;
+    
+    font-family: 'Poppins', sans-serif;
 }
 
 .close-button {
@@ -95,12 +112,14 @@ textarea {
     color: #2703A5;
     border-color: #2703A5;
     border-width: 2px;
+    font-weight: 400;
     padding: 12px 18px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     margin: 10px;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-group table {
@@ -113,6 +132,15 @@ textarea {
     align-items: center;
     gap: 10px;
     
+    
+    
+
+
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .form-actions {
@@ -121,10 +149,13 @@ textarea {
     gap: 10px;
     margin-top: 10px;
     margin-left: 20px;
+    
 }
 
 .field-labels {
     font-size: smaller;
     color: #3C3C3C;
+    font-family: 'Poppins', sans-serif;
+
     opacity: 0.5;
 }

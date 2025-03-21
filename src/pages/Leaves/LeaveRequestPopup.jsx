@@ -57,28 +57,28 @@ const LeaveRequestPopup = ({ onClose }) => {
     <div className="popup-overlay">
       <div className="popup-content">
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-group" style={{ marginTop: "30px"}}>
             <div> 
 
               
               <div style={{display: "flex"}}> 
                 <div>
               
-                  <h1 style={{ marginTop: "30px", marginLeft: "10px",maxHeight: "10px" }}>Apply for Leave</h1>
+                  <h1 style={{ marginTop: "55px", marginLeft: "10px",maxHeight: "10px" }}>Apply for leave</h1>
                 </div>
 
                 
 
-                <div className="leaveType" style={{ marginTop: "27px" , marginLeft: "60px", display: "flex"}}>
-                <span className="dropdown-label" style={{ marginRight: "10px", marginTop: "10px" }}>Type</span>
+                <div className="leaveType" style={{ marginTop: "22px", display: "flex"}}>
+                <span className="dropdown-label" style={{ marginTop: "35px" }}>Type</span>
 
 
-                  <Dropdown
+                  <Dropdown 
                   
                     options={[
-                      { value: "sick", label: "Sick Leave" },
-                      { value: "vacation", label: "Vacation Leave" },
-                      { value: "personal", label: "Personal Leave" },
+                      { value: "sick", label: "Sick leave" },
+                      { value: "vacation", label: "Vacation leave" },
+                      { value: "personal", label: "Personal leave" },
                     ]}
                     value={formData.leaveType}
                     onChange={handleDropdownChange}
@@ -102,10 +102,10 @@ const LeaveRequestPopup = ({ onClose }) => {
                   <hr style={{width: "100%", marginTop: "20px", marginBottom: "30px", marginLeft: "5px", opacity: 0.25 }} />
                 </div>
               <div> 
-                <div className="form-group" style={{ width: "100%", height: "40%" }}>
-                  <label className="field-labels"><b>Employee's Name</b></label>
+                <div className="form-group" style={{ width: "100%", height: "60%" }}>
+                  <label className="field-labels"><b>Employee's name</b></label>
                   <textarea
-                    style={{ backgroundColor: "white", resize: "none", height: "1.2em", width: "100%" }}
+                    style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "2.4em", width: "100%" }}
                     name="employeeName"
                     value={formData.employeeName}
                     onChange={handleChange}
@@ -115,7 +115,7 @@ const LeaveRequestPopup = ({ onClose }) => {
               </div > 
               <div style={{display: "flex"}}> 
                 <div className="form-group" style={{ width: "40%", height: "40%" }}>
-                  <label className="field-labels"><b>Start Date</b></label>
+                  <label className="field-labels"><b>Start date</b></label>
                   <input
                     type="date"
                     name="startDate"
@@ -126,10 +126,10 @@ const LeaveRequestPopup = ({ onClose }) => {
                   />
                 </div>
                 <div style={{ width: "20%", textAlign: "center", verticalAlign: "middle" }}>
-                  <p style={{ marginTop: "30px", marginLeft: "18px" }}>to</p>
+                  <p style={{ marginTop: "40px", marginLeft: "6px", fontWeight: "600", fontSize: "19px" }}>to</p>
                 </div>
                 <div className="form-group" style={{ width: "40%", height: "40%" }}>
-                  <label className="field-labels"><b>End Date</b></label>
+                  <label className="field-labels"><b>End date</b></label>
                   <input
                     type="date"
                     name="endDate"
@@ -143,6 +143,7 @@ const LeaveRequestPopup = ({ onClose }) => {
               <div> 
                 <div className="form-group" style={{ marginTop: "20px" }}>
                   <textarea
+                  style={{ backgroundColor: "white", resize: "none", overflow: 'hidden', height: "3em" }}
                     placeholder="Reason for leave"
                     name="reason"
                     value={formData.reason}
@@ -157,7 +158,7 @@ const LeaveRequestPopup = ({ onClose }) => {
             <FileUploadButton /> 
           </div>
               </div>
-              <div className="form-actions" style={{display: "flex", width: "97%", marginTop: "225px"}}> 
+              <div className="form-actions" style={{display: "flex", width: "97%", marginTop: "60px"}}> 
                 <div>
                   <button className="close-button" type="button" onClick={onClose} >
                     <b>Close</b>

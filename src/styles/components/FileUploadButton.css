@@ -3,6 +3,9 @@
   align-items: center;
   gap: 8px; /* Adjust spacing between button and file name */
   max-width: 100%;
+  padding-top: 20px;
+  
+  
 }
 
 .file-upload-button {
@@ -15,14 +18,15 @@
   justify-content: center;
   gap: 6px;
   padding: 0 12px;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #454545;
   border: none;
   cursor: pointer;
-  flex-shrink: 0; /* Prevent button from shrinking */
+  flex-shrink: 0; 
+  margin-bottom: 32px;
 }
 
 .file-upload-button svg {
@@ -36,8 +40,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px; /* Prevent long names from pushing elements */
-  flex-grow: 1; /* Allows the text to fit within available space */
+  max-width: 200px; 
+  flex-grow: 1; 
 }
 
 .hidden-input {
